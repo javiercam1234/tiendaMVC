@@ -44,10 +44,9 @@
     </div>
 
     <div id="page-content-wrapper">
-      <main id="main-content">
-        <h2>Bienvenido</h2>
-        <p>Selecciona una vista del menú</p>
-      </main>
+      <div id="main-content">
+        <?= $contenido ?? '' ?>
+      </div>
 
       <footer>
         <span id="clock">00:00:00</span>
