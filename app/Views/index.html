@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard con Sidebar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-light border-end">
+      <button id="toggleSidebar" class="btn-toggle">⇤</button>
+      <nav class="menu">
+        <a href="#" data-view="home.html">Inicio</a>
+        <a href="#" data-view="vista1.html">Vista 1</a>
+        <a href="#" data-view="vista2.html">Vista 2</a>
+      </nav>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="page-content-wrapper">
+      <main id="main-content">
+        <!-- Aquí se carga la vista seleccionada -->
+        <h2>Bienvenido</h2>
+        <p>Selecciona una vista del menú</p>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <span id="clock">00:00:00</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

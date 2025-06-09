@@ -1,0 +1,29 @@
+{
+  "Seguridad": {
+    "icono": "fa-lock",
+    "submenus": [
+      { "nombre": "Usuarios", "icono": "fa-user", "url": "/usuarios" },
+      { "nombre": "Roles", "icono": "fa-shield-alt", "url": "/roles" },
+      { "nombre": "Páginas", "icono": "fa-globe", "url": "/paginas" }
+    ]
+  },
+  "Clientes": {
+    "icono": "fa-address-book",
+    "submenus": [
+      { "nombre": "Clientes", "icono": "fa-users", "url": "/clientes" }
+    ]
+  },
+  "Productos": {
+    "icono": "fa-boxes",
+    "submenus": [
+      { "nombre": "Productos", "icono": "fa-box", "url": "/productos" }
+    ]
+  },
+  "Facturación": {
+    "icono": "fa-file-invoice",
+    "submenus": [
+      { "nombre": "Facturas", "icono": "fa-receipt", "url": "/facturas" },
+      { "nombre": "Detalle Facturas", "icono": "fa-list", "url": "/detalle-facturas" }
+    ]
+  }
+}

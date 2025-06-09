@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #111;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar-expanded {
+  width: 300px;
+}
+
+.sidebar-collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  transition: background 0.3s;
+}
+
+.menu-link:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.menu-link i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu-text {
+  transition: opacity 0.2s, width 0.3s;
+  white-space: nowrap;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.submenu-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: background 0.3s;
+}
+
+.submenu-link:hover {
+  background-color: #444;
+}
+
+.menu-item:hover .submenu {
+  display: flex;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar-footer i {
+  margin-right: 10px;
+}
+
+.sidebar-collapsed .menu-text,
+.sidebar-collapsed .sidebar-title,
+.sidebar-collapsed .sidebar-footer span {
+  display: none;
+}
+
+#page-content-wrapper {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+}

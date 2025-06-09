@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Dashboard",
+    "icon": "fas fa-house",
+    "items": [
+      { "title": "Inicio", "icon": "fas fa-gauge", "url": "dashboard" }
+    ]
+  },
+  {
+    "title": "Facturación",
+    "icon": "fas fa-file-invoice",
+    "items": [
+      { "title": "Facturas", "icon": "fas fa-receipt", "url": "facturas" },
+      { "title": "Detalle Facturas", "icon": "fas fa-chart-bar", "url": "detalle-facturas" }
+    ]
+  },
+  {
+    "title": "Productos",
+    "icon": "fas fa-box",
+    "items": [
+      { "title": "Productos", "icon": "fas fa-boxes-stacked", "url": "productos" }
+    ]
+  },
+  {
+    "title": "Clientes",
+    "icon": "fas fa-users",
+    "items": [
+      { "title": "Clientes", "icon": "fas fa-address-book", "url": "clientes" }
+    ]
+  },
+  {
+    "title": "Seguridad",
+    "icon": "fas fa-lock",
+    "items": [
+      { "title": "Usuarios", "icon": "fas fa-user", "url": "usuarios" },
+      { "title": "Roles", "icon": "fas fa-shield-alt", "url": "roles" },
+      { "title": "Páginas", "icon": "fas fa-globe", "url": "paginas" }
+    ]
+  },
+  {
+    "title": "Salir",
+    "icon": "fas fa-sign-out-alt",
+    "items": [
+      { "title": "Cerrar sesión", "icon": "fas fa-door-closed", "url": "logout" }
+    ]
+  }
+]
